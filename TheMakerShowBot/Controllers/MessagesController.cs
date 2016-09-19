@@ -110,6 +110,10 @@ namespace HelpBot
             {
                 replyMsg = "If you're computer is slow, maybe you should try to restart it.\r\n\r\nIt seems to me like you're using Windows 10, so here's how you'd restart: ";
             }
+            else if (intent == "printer issue")
+            {
+                replyMsg = "It sounds like you're having an issue with a printer :(\r\n\r\nThis isn't something I'm programmed to help with yet, but rest assured that Building Facilities is automatically notified of most printer issues, and someone should be on their way!";
+            }
             else if (intent == "add a printer")
             {
                 replyMsg = "[addprinter]"; //this is a hack to indicate we should enter the add printer dialog.  previous: "I can help you add a printer.  First, are you using Windows XP, Windows 7 or a Mac?";
