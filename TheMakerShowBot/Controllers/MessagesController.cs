@@ -119,7 +119,7 @@ namespace HelpBot
                 string system = MapSystemNameToFriendlyName(luisResult.GetEntityValue("system"));
                 replyMsg = $"It sounds like you need access to {system}.  That should be no problem."
                     + $"\r\n\r\nIn order to go ahead and do that, I just need your manager Katie Jordan to chat with me about it (or tell her to email the details to me at helpbot@cloud.com).  Once she confirms you're authorized for that I should be able to set you up with access!"
-                    + $"\r\n\r\nI've gone ahead and created ticket for your system access request, the ticket # is {DateTime.Now.ToString("MMddHHmmss")}";
+                    + $"\r\n\r\nI've gone ahead and created a ticket in our system for your access request. The ticket # is _{DateTime.Now.ToString("MMddHHmmss")}_, but you can always ask me about any of your IT Support tickets even if you don't have the ticket number handy.";
             }
             else
             {
