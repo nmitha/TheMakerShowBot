@@ -10,7 +10,12 @@ namespace HelpBot.FormFlows
 {
     public enum ComputerName
     {
-        W01573398, L03848491, AddPrinterToAll
+        [Describe(Description = "Desktop W01573398"), Terms("Desktop W01573398", "W01573398", "W 01573398", "desktop")]
+        W01573398,
+        [Describe(Description = "Laptop L03848491"), Terms("Laptop L03848491", "L03848491", "L 03848491", "laptop")]
+        L03848491,
+        [Terms("Add Printer To All", ".*all.*", ".*both.*")]
+        AddPrinterToAll
     };
     
     [Serializable]
