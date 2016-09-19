@@ -116,8 +116,10 @@ namespace HelpBot
             }
             else if (intent == "access to system")
             {
-                string system = luisResult.GetEntityValue("system") ?? "an application or system we manage";
-                replyMsg = $"It sounds like you need access for {system}.  That should be no problem.  I hope you don't mind, but you'll just need to your manager Katie Jordan to chat with me about it, or she can email the details to me at helpbot@cloud.com so I can confirm you're authorized for that!";
+                string system = MapSystemNameToFriendlyName(luisResult.GetEntityValue("system"));
+                replyMsg = $"It sounds like you need access to {system}.  That should be no problem."
+                    + $"\r\n\r\nIn order to go ahead and do that, I just need your manager Katie Jordan to chat with me about it (or tell her to email the details to me at helpbot@cloud.com).  Once she confirms you're authorized for that I should be able to set you up with access!"
+                    + $"\r\n\r\nI've gone ahead and created ticket for your system access request, the ticket # is {DateTime.Now.ToString("MMddHHmmss")}";
             }
             else
             {
@@ -125,6 +127,22 @@ namespace HelpBot
             }
 
             return replyMsg;
+        }
+
+        internal static string MapSystemNameToFriendlyName(string system)
+        {
+            if (string.IsNullOrEmpty(system))
+            {
+                return "an application or system we manage";
+            }
+            else if (system.Equals("sharepoint", StringComparison.OrdinalIgnoreCase))
+            {
+                return "a SharePoint site";
+            }
+            else
+            {
+                return system.ToUpper();
+            }
         }
 
         internal static IDialog<AddPrinterInfo> MakeRootAddPrinterDialog()
