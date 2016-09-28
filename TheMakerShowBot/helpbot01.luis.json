@@ -1,0 +1,532 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "helpbot01",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "access to system"
+    },
+    {
+      "name": "add a printer"
+    },
+    {
+      "name": "computer slow"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "printer issue"
+    },
+    {
+      "name": "thank you"
+    }
+  ],
+  "entities": [
+    {
+      "name": "response"
+    },
+    {
+      "name": "system"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [],
+  "actions": [
+    {
+      "actionName": "thank you",
+      "intentName": "thank you",
+      "actionParameters": []
+    },
+    {
+      "actionName": "add a printer",
+      "intentName": "add a printer",
+      "actionParameters": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "how do i add a printer?",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "my computer is very slow",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "my computer is soo slowww",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "it takes too long to open programs",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "windows is slow",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "excel is slow",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "pc is slowwwwwwwwwwww",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "it's not fast enough",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "things take forever",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "it takes too long to load up",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "i need a printer",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "how do i connect a printer",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "i need access to a program",
+      "intent": "access to system",
+      "entities": []
+    },
+    {
+      "text": "give me access to the x: drive",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i need access to a sharepoint site",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i don't have permissions to the hr fileshare",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "it won't let me go to the s drive",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 9,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "can you add me to the s drive",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "it's so slowwww",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how are you?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what's the weather?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "nice to meet you",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "who are you?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what's your name?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can you tell me about cats",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how old is obama?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you know the capital of iowa?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "are you a computer?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "perfect, thanks",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "great, thanks",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "ty",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "you rock",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "you stink",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "you're the best!",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "nailed it!",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "who's the queen of england?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "when was world war 2?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": ":)",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "=)",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "how do you work?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "great",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "my laptop is sooo slowwwwwwwwww",
+      "intent": "computer slow",
+      "entities": []
+    },
+    {
+      "text": "will it be foggy tomorrow morning?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need access to bprm2",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i need access to sharepoint",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i need access to mxqp",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "can you get me confluence access?",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i can't get into sharepoint",
+      "intent": "access to system",
+      "entities": []
+    },
+    {
+      "text": "when i go to the hr shared drive it tells me permission denied",
+      "intent": "access to system",
+      "entities": []
+    },
+    {
+      "text": "i need access to the accounting fileshare",
+      "intent": "access to system",
+      "entities": [
+        {
+          "entity": "system",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "the printer on the 4th floor is jammed",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "our printer doesn't work",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "our team printer is out of ink",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "the printer needs toner",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "printer is out of service",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "printer is out of toner",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "printer is out of ink",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "printer needs ink",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "printer is jammed up",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "printer won't print",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "paper gets stuck in the printer",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "printer is not working",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "i want to add a printer to my computer",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "the 3rd floor printer needs fixing",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "can you add the color printer for me?",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "my laptop needs a printer added",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "my pc needs a printer added",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "can i get a printer added to my computer?",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "can you install a printer on my pc?",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "our printer is on the fritz",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "the printer here isn't working",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "i need a printer installed and i don't know how",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "i don't know how to fix the paper jam on our printer",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "our printer won't print",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "i'd like to add a printer",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "can you install the printer on my floor?",
+      "intent": "add a printer",
+      "entities": []
+    },
+    {
+      "text": "can someone fix the printer on my floor?",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "we need paper for the printer here",
+      "intent": "printer issue",
+      "entities": []
+    },
+    {
+      "text": "(y)",
+      "intent": "thank you",
+      "entities": []
+    },
+    {
+      "text": "<ss type=\"yes\">(y)</ss>",
+      "intent": "thank you",
+      "entities": []
+    }
+  ]
+}

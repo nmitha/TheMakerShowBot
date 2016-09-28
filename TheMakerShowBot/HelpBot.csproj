@@ -141,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="helpbot01.luis.json" />
     <None Include="Properties\PublishProfiles\HelpBot Azure Publish.pubxml" />
     <None Include="Properties\PublishProfiles\HelpBot01 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\TheMakerShowBot - Web Deploy %282%29.pubxml" />
